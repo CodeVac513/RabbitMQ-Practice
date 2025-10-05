@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: HelloMessageQueue
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guestUser
+    password: guestUser
