@@ -1,4 +1,4 @@
-package com.example.HelloMessageQueue.step0;
+package com.example.HelloMessageQueue.step1;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
