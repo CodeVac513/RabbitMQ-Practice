@@ -15,7 +15,7 @@ public class LogPublisher {
     }
 
     public void publish(String routingKey, String message) {
-        rabbitTemplate.convertAndSend(RabbitMQConfig.DIRECT_EXCHANGE, routingKey, message);
+        rabbitTemplate.convertAndSend(RabbitMQConfig.TOPIC_EXCHANGE, routingKey, message);
         log.info("[#] message published : {} : {}", routingKey, message);
     }
 }

@@ -22,4 +22,9 @@ public class LogConsumer {
     public void consumeInfo(String message) {
         log.info("[INFO] 일반 메시지 : {}", message);
     }
+
+    @RabbitListener(queues = RabbitMQConfig.ALL_LOG_QUEUE)
+    public void consumeAllLog(String message) {
+        log.info("[ALL LOG] 모든 메시지 : {}", message);
+    }
 }
