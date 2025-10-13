@@ -8,6 +8,10 @@ group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 description = 'Demo project for Spring Boot'
 
+tasks.withType(JavaCompile) {
+	options.compilerArgs.add('-parameters')
+}
+
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)

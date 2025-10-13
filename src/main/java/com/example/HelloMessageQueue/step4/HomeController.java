@@ -1,4 +1,4 @@
-package com.example.HelloMessageQueue.step3;
+package com.example.HelloMessageQueue.step4;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -13,5 +13,11 @@ public class HomeController {
     public String home(Model model) {
         model.addAttribute("message", "Message Queue Sample!");
         return "home";
+    }
+
+    @GetMapping("/news")
+    public String news(Model model) {
+        model.addAttribute("message", "Welcome to RabbitMQ News Sample!");
+        return "news";
     }
 }
