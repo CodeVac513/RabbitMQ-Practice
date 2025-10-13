@@ -1,4 +1,4 @@
-package com.example.HelloMessageQueue.step3;
+package com.example.HelloMessageQueue.step5;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
