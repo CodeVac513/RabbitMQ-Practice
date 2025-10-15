@@ -1,6 +1,5 @@
-package com.example.HelloMessageQueue.step7;
+package com.example.HelloMessageQueue.step8;
 
-import com.rabbitmq.client.AMQP;
 import org.springframework.amqp.core.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

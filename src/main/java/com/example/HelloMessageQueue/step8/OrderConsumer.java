@@ -1,4 +1,4 @@
-package com.example.HelloMessageQueue.step7;
+package com.example.HelloMessageQueue.step8;
 
 import com.rabbitmq.client.Channel;
 import lombok.extern.slf4j.Slf4j;
