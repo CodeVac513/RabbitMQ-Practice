@@ -16,8 +16,8 @@ public class OrderProducer {
 
     public void sendShipping(String message) {
         rabbitTemplate.convertAndSend(
-                RabbitMQConfig.ORDER_EXCHANAGE,
-                "order.completed.shipping",
+                RabbitMQConfig.ORDER_TOPIC_EXCHANGE,
+                "order.completed",
                 message);
 
         log.info("[주문 완료, 배송 지시 메시지 생성 : {} ]", message);
